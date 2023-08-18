@@ -66,7 +66,7 @@ app.get("/weather", (req, res) => {
 });
 
 app.get("/products", (req, res) => {
-  console.log(req.query);
+  // console.log(req.query);
   if (!req.query.search) {
     return res.send({
       error: "You must provide a search term",
@@ -90,10 +90,6 @@ app.get("*", (req, res) => {
     errorMessage: "Page note found.",
   });
 });
-
-// app.listen(3000, () => {
-//   console.log("server is up on port 3000.");
-// });
 
 app.listen(port, () => {
   console.log(`server is up on port ${port}`);
