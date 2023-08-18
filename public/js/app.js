@@ -29,4 +29,21 @@ weatherForm.addEventListener("submit", (e) => {
       });
     }
   );
+
+  // fetch(`/weather?address=${location}`).then(
+  //   (response) => {
+  //     response.json().then((data) => {
+  //       if (data.error) {
+  //         msgOne.textContent = data.error;
+  //         console.log(data.error);
+  //       } else {
+  //         msgOne.textContent = data.location;
+  //         msgTwo.textContent = data.forecast;
+  //         image.src = data.weatherIcon[0];
+  //         image.alt = "weather-img";
+  //         // console.log(data.weatherIcon[0], "dada...");
+  //       }
+  //     });
+  //   }
+  // );
 });
